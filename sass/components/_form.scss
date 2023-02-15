@@ -43,7 +43,7 @@
         transition: all .3s;
     }
 
-    &__input:placeholder-shown+&__label {
+    &__input:placeholder-shown + &__label {
         //+ is for sibling selector, next one from input in this case. also ~ can be used if there was something between
         opacity: 0;
         visibility: hidden;
@@ -52,7 +52,7 @@
     }
 
     &__radio-group {
-        width: 50%;
+        width: 49,5%;
         display: inline-block;
     }
 
@@ -98,7 +98,7 @@
 
     //when label element is hit then radio element is checked
     //then we select sibling of radio element with ~ and then the child of that
-    &__radio-input:checked~&__radio-label &__radio-button::after {
+    &__radio-input:checked ~ &__radio-label &__radio-button::after {
         opacity: 1;
 
     }
